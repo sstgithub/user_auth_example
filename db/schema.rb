@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140521005553) do
+ActiveRecord::Schema.define(version: 20140525232554) do
 
   create_table "items", force: true do |t|
     t.string   "name"
@@ -19,6 +19,14 @@ ActiveRecord::Schema.define(version: 20140521005553) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "wishlist_id"
+    t.string   "etsy_url"
+    t.string   "etsy_id"
+    t.string   "image_id"
+    t.string   "user_id"
+    t.string   "image_75x75"
+    t.integer  "feedback_count"
+    t.integer  "feedback_score_percent"
+    t.string   "price"
   end
 
   create_table "users", force: true do |t|
